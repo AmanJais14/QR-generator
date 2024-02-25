@@ -1,0 +1,81 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(32, 30, 30);
+}
+.container {
+    width: 370px;
+    padding: 25px 25px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.container p {
+    font-size: medium;
+    font-weight: 500;
+}
+.container input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: medium;
+}
+.container button {
+    width: 100%;
+    background-color: rgb(126, 10, 234);
+    padding: 10px 10px;
+    font-size: medium;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 5px rgb(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#imageBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imageBox img {
+    width: 100%;
+    height: 100%;
+    /* padding: 20px; */
+}
+#imageBox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.error {
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
